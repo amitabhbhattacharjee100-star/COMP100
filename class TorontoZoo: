@@ -1,0 +1,63 @@
+class TorontoZoo:
+    def __init__(self, pavilion_name, animal, count):
+        self.__pavilion_name = pavilion_name
+        self.__animal = animal
+        self.__count = count
+
+    def show_info(self):
+        print("Pavilion:", self.__pavilion_name)
+        print("Animal:", self.__animal)
+        print("Number of Animals:", self.__count)
+        print()
+
+
+# creating zoo pavilion objects
+african_pavilion = TorontoZoo("African Pavilion", "Lion", 4)
+australian_pavilion = TorontoZoo("Australian Pavilion", "Kangaroo", 6)
+south_american_pavilion = TorontoZoo("South American Pavilion", "Monkey", 8)
+
+# displaying information
+african_pavilion.show_info()
+australian_pavilion.show_info()
+south_american_pavilion.show_info()
+ Sample Output
+Pavilion: African Pavilion
+Animal: Lion
+Number of Animals: 4
+
+Pavilion: Australian Pavilion
+Animal: Kangaroo
+Number of Animals: 6
+
+Pavilion: South American Pavilion
+Animal: Monkey
+Number of Animals: 8
+class TorontoZoo:
+    def __init__(self, pavilion_name, animal, count, habitat, food):
+        self.__pavilion_name = pavilion_name
+        self.__animal = animal
+        self.__count = count
+        self.__habitat = habitat
+        self.__food = food
+
+    def show_info(self):
+        print("Pavilion:", self.__pavilion_name)
+        print("Animal:", self.__animal)
+        print("Number of Animals:", self.__count)
+        print("Habitat:", self.__habitat)
+        print("Food:", self.__food)
+        print()
+
+
+# creating zoo pavilion objects
+african_pavilion = TorontoZoo("African Pavilion", "Lion", 4, "Savannah", "Meat")
+australian_pavilion = TorontoZoo("Australian Pavilion", "Kangaroo", 6, "Grassland", "Plants")
+south_american_pavilion = TorontoZoo("South American Pavilion", "Monkey", 8, "Rainforest", "Fruits")
+
+# displaying information
+african_pavilion.show_info()
+australian_pavilion.show_info()
+south_american_pavilion.show_info()
+
+
+
